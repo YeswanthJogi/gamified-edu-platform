@@ -1,10 +1,23 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 
+import Home from "./pages/Home";
 import LoginForm from "./components/LoginForm";
 import AboutPage from "./components/About";
 import ContactPage from "./components/Contact";
 import AdminDashboard from "./components/AdminDashboard"; // 🔹 Import Admin Dashboard
+import DemoLesson from "./pages/DemoLesson";
+import Leaderboard from "./pages/Leaderboard";
+import Rewards from "./pages/Rewards";
+import Challenge from "./pages/Challenge";
+import Quiz from "./pages/Quiz";
+import GamificationRewards from "./components/GamificationRewards/GamificationRewards";
+import Header from "./components/Header";
+import LeaderBoard from "./components/LeaderBoard/LeaderBoard"; 
+import Community from "./components/Community/Community"; 
+import TeacherDashboard from "./components/TeacherDashboard/TeacherDashboard";
+
+
 
 function App() {
   const linkStyle = {
@@ -21,60 +34,39 @@ function App() {
 
   return (
     <Router>
-      <div style={{ padding: "20px" }}>
-        <h1>Gamified Edu Platform</h1>
+      
+      <div >
 
-        {/* Navbar */}
-        <nav style={{ marginBottom: "20px" }}>
-          <NavLink
-            to="/"
-            style={({ isActive }) =>
-              isActive ? { ...linkStyle, ...activeStyle } : linkStyle
-            }
-            end
-          >
-            Home
-          </NavLink>
-
-          <NavLink
-            to="/about"
-            style={({ isActive }) =>
-              isActive ? { ...linkStyle, ...activeStyle } : linkStyle
-            }
-          >
-            About
-          </NavLink>
-
-          <NavLink
-            to="/contact"
-            style={({ isActive }) =>
-              isActive ? { ...linkStyle, ...activeStyle } : linkStyle
-            }
-          >
-            Contact
-          </NavLink>
-
-          {/* 🔹 Dashboard Link */}
-          <NavLink
-            to="/admin"
-            style={({ isActive }) =>
-              isActive ? { ...linkStyle, ...activeStyle } : linkStyle
-            }
-          >
-            Admin Dashboard
-          </NavLink>
-        </nav>
-
-        <hr />
+  <Header/>
 
         {/* Routes */}
         <Routes>
-          <Route path="/" element={<LoginForm />} />
+          <Route path="/" element={<Home/>} />
+          <Route path="/login" element={<LoginForm />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/admin" element={<AdminDashboard />} /> {/* 🔹 Dashboard route */}
         </Routes>
       </div>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<LoginForm />} />
+        <Route path="/demo-lesson" element={<DemoLesson/>}/>
+        <Route path="/leaderboard" element={<Leaderboard/>}/>
+        <Route path="/rewards" element={<Rewards/>}/>
+        <Route path="/challenges" element={<Challenge/>}/>
+        <Route path="/quiz" element={<Quiz/>}/>
+        <Route path="/teacher" element={<TeacherDashboard/>}/>
+      
+      
+        <Route path="/" element={<LoginForm />} />
+        <Route path="/gamification" element={<GamificationRewards />} />
+        <Route path="/leaderboard" element={<LeaderBoard />} />
+        <Route path="/community" element={<Community />} />
+        <Route path="/teacher-dashboard" element={<TeacherDashboard />} />
+
+      </Routes>
     </Router>
   );
 }
