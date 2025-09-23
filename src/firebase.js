@@ -5,11 +5,11 @@ import { getAuth } from "firebase/auth";
 // Replace with your Firebase project config
 const firebaseConfig = {
   apiKey: "AIzaSyCAinBXdlD9j-bVythaZ82v-ErQ0jjdGUE",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+  authDomain: "eco-learn-sih.firebaseapp.com",
   projectId: "eco-learn-sih",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  storageBucket: "eco-learn-sih.firebasestorage.app",
+  messagingSenderId: "592885838701",
+  appId: "1:592885838701:web:f2df3ad8d00d2c025a2064"
 };
 
 const app = initializeApp(firebaseConfig);

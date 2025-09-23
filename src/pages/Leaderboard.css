@@ -1,0 +1,87 @@
+.leaderboard-container {
+  padding: 100px 20px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.leaderboard-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.leaderboard-hero h1 {
+  font-size: 2rem;
+  color: #15803d;
+}
+
+.leaderboard-hero p {
+  margin-top: 10px;
+  color: #374151;
+}
+
+.leaderboard-table {
+  margin-bottom: 40px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+th, td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  background: #f3f4f6;
+  font-weight: 600;
+  color: #111827;
+}
+
+tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+.top-rank {
+  font-weight: 700;
+  color: #16a34a;
+}
+
+.leaderboard-cta {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #16a34a;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #15803d;
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.btn-secondary:hover {
+  background: #d1d5db;
+}

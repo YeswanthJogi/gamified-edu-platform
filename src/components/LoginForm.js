@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { createUserWithEmailAndPassword, sendEmailVerification, signInWithEmailAndPassword, sendPasswordResetEmail } from "firebase/auth";
 import { auth } from "../firebase";
 import "./Auth.css"; // your styling
+import Header from "./Header";
 
 const LoginForm = () => {
+  <Header/>
   const [isLogin, setIsLogin] = useState(true); // toggle state
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
