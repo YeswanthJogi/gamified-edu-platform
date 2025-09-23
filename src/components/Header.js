@@ -9,7 +9,7 @@ function Header() {
       <div className="logo">🎓 EduGamify</div>
 
       <nav className="nav-links">
-        <Link to="/">Login</Link>
+        <Link to="/login">Login</Link>
         <Link to="/gamification">Gamification & Rewards</Link>
         <Link to="/leaderboard">Leaderboard</Link>
         <Link to="/community">Community</Link>
