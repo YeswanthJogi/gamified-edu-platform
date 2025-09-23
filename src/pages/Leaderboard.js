@@ -15,7 +15,6 @@ function Leaderboard() {
 
   return (
     <div>
-      <Header />
 
       <main className="leaderboard-container">
         {/* Title */}

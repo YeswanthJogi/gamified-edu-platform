@@ -19,7 +19,6 @@ function DemoLesson() {
 
   return (
     <div>
-      <Header />
 
       <main className="lesson-container">
         {/* Lesson Banner */}

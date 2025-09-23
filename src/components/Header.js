@@ -1,34 +1,19 @@
+// src/components/Header.js
 import React from "react";
-import "./Header.css";
 import { Link } from "react-router-dom";
+import "./Header.css";
+
 function Header() {
   return (
-    <header className="header">
-      <div className="header-container">
-        {/* Logo / Brand */}
-        <div className="header-logo">
-          <img
-            src="/logo.png"
-            alt="EcoLearn Logo"
-            className="logo-img"
-          />
-          <span className="logo-text">EcoLearn</span>
-        </div>
+    <header className="main-header">
+      <div className="logo">🎓 EduGamify</div>
 
-        {/* Navigation Links */}
-        <nav className="nav-links">
-          <a href="#about">About</a>
-          <a href="#features">Features</a>
-          <a href="#testimonials">Testimonials</a>
-          <a href="#contact">Contact</a>
-        </nav>
-
-        {/* CTA Buttons */}
-        <div className="header-buttons">
-          {/* <Link to="/login" className="btn-login">Login</Link> */}
-          <Link to="/signup" className="btn-signup">Login</Link>
-        </div>
-      </div>
+      <nav className="nav-links">
+        <Link to="/">Login</Link>
+        <Link to="/gamification">Gamification & Rewards</Link>
+        <Link to="/leaderboard">Leaderboard</Link>
+        <Link to="/community">Community</Link>
+      </nav>
     </header>
   );
 }
