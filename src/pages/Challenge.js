@@ -37,7 +37,6 @@ function Challenge() {
 
   return (
     <div>
-      <Header />
 
       <main className="challenges-container">
         {/* Title */}

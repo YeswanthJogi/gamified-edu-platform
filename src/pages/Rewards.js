@@ -20,7 +20,6 @@ function Rewards() {
 
   return (
     <div>
-      <Header />
 
       <main className="rewards-container">
         {/* Title */}

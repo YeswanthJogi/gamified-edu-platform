@@ -23,7 +23,6 @@ function Quiz() {
 
   return (
     <div>
-      <Header />
 
       <main className="quizzes-container">
         {/* Title */}
